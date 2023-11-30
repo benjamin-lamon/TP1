@@ -1,4 +1,56 @@
 exo 1
 
-2) /.git
+2)
+/.git
+
+4)
+"fatal: cette opération doit être effectuée dans un arbre de travail". L'abre de travail est le dossier juste avant /.git
+
+5)
+pltguest@pc4229:~/OPI/TP1/ex1$ git add ex1
+pltguest@pc4229:~/OPI/TP1/ex1$ git status
+Sur la branche master
+
+Aucun commit
+
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+	nouveau fichier : ex1
+
+Le fichier est en attente d'un commit
+
+7)
+pltguest@pc4229:~/OPI/TP1/ex1$ git status
+Sur la branche master
+rien à valider, la copie de travail est propre
+
+8)
+pltguest@pc4229:~/OPI/TP1/ex1$ git log -p
+commit 089d229ea5de3444ffd3c3635e8551638dd5f1d3 (HEAD -> master)
+Author: benjamin-lamon <benjamin.lamon@etu.sorbonne-universite.fr>
+Date:   Thu Nov 30 11:03:37 2023 +0100
+
+    Un superMessage
+
+diff --git a/ex1 b/ex1
+new file mode 100644
+index 0000000..d22c1f8
+--- /dev/null
++++ b/ex1
+@@ -0,0 +1,4 @@
++exo 1
++
++2) /.git
++
+
+il nous affiche le commit de juste avant avec le contenu du ficheir ex1
+
+9)
+git diff nous affiche les modifications apportées au fichier ex1 (que je ne vais pas recopier, il s'agit de la quasi-totalité du fichier que vous êtes en train de lire...)
+
+11)
+il n'y a rien dedans
+
+
+
 
